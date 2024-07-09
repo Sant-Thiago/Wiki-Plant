@@ -2,10 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './Header/Header'
 import './App.css'
+import Rating from './Rating/Rating'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header/>
+    {/* <Header/> */}
+      <nav className='navPlants'>Plantas  Wiki  OG Tresure</nav>
     <section>
       <div className='divImg'>
         <img src="" alt="" />
@@ -13,10 +15,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </div>
       <div className='divInfoMain'>
         <div className='infosRap'>
-          <h1>Name</h1>
-          <p>tipo</p>
-          <span>avaliação</span>
-          <span>PopName</span>
+          <div className='namesReview'>
+            <div className='nameType'>
+              <h1>OG Treasure</h1>
+              <span>Treasure</span>
+              <p className='typePlant'>
+                Híbrido
+              </p>
+            </div>
+            <div>
+              <Rating/>
+            </div>
+          </div>
+          <div className='iconDiv'>
+            icon
+          </div>
         </div>
         <h2>Porcentagens THC/CBD</h2>
         <div className='areaBar'>

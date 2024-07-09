@@ -1,0 +1,26 @@
+.starsGrades {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 120px;
+
+    font-size: 15px;
+}
+
+.containerStars {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 70%;
+}
+
+.grades {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.reviews {
+    font-size: 12px;
+    color: black;
+}
