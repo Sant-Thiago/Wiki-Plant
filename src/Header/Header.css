@@ -1,0 +1,19 @@
+.bodyHeader {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.ImgClass {
+    background-color: brown;
+}
+
+.inputSearch {
+    border-color: chocolate;
+    background-color: blue;
+}
+
+.profileClass {
+    background-color: blueviolet;
+}

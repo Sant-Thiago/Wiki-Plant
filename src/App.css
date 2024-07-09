@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --whitePrimary: #E5E0D8;
+    --creamPrimary: #E5D2B8;
+    --greenPrimary: #809671;
+    --greenSecond: #B3B792;
+
+    --marrom: #725C3A;
+    --bege: #D2AB80;
+
+}
+
+body {
+    background-color: var(--whitePrimary);
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.divImg {
+    background-color: var(--greenPrimary);
+    width: 35%;
+    height: 300px;
+}
+
+.divInfoMain {
+    width: 60%;
+}
+
+.infosRap {
+    background-color: #725C3A;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+}
+
+.areaBar {
+    width: 100%;
+}
+
+.infoBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.areaBar span {
+    display: block;
+    text-align: center;
+    background-color: red;
+    width: 100%;
+}
+
+.prinEffc {
+    display: flex;
+    background-color: #D2AB80;
+    margin-bottom: 5px;
+}
+
+.prinEffc p {
+    margin-right: 10px;
+}
+
+.prinFlv {
+    display: flex;
+    background-color: #D2AB80;
+}
+
+.prinFlv p {
+    margin-right: 10px;
+}
+
+.infosPlant {
+    border: 2px solid red;
+    width: 60%;
+    height: 250px;
+}
+
+.reviews {
+    font-size: 10px;
+    display: flex;
+}
+
+.reviews h2 {
+    border: 2px solid black;
+    margin: 0 2px;
+}
+
+.infoCarac {
+    width: 35%;
+    border: 2px solid black;
+    height: 250px;
+}
