@@ -20,7 +20,7 @@ function Rating() {
         return percentBase * value / valueBase;
     }
 
-    function geneStart(obj) {
+    function geneStars(obj) {
         const result = verifAssessment(obj);
         const total = getTotal(obj);
         const percent = getPercent(100, total, result) / 10;
@@ -49,7 +49,7 @@ function Rating() {
         { nota: 5, total: 3 }
     ];
 
-    geneStart(objAssessment);
+    geneStars(objAssessment);
 
     // avaliação = {
     //     pessoa: id_1381209,

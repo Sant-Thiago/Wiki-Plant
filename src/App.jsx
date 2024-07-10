@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import './App.css'
 import Rating from './Rating/Rating'
 import LikeButton from './Buttons/LikeButton/LikeButton'
+import Substances from './Characteristics/Substances/Substances'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,17 +19,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <div className='infosRap'>
           <div className='namesReview'>
             <div className='nameType'>
-              <h1>OG Treasure</h1>
-              <span>Treasure</span>
+              <div>
+                <h1>OG Treasure</h1>
+                <span>Treasure</span>
+              </div>
               <p className='typePlant'>
                 Híbrido
               </p>
             </div>
-            <Rating />
+            <Rating/>
           </div>
           <LikeButton/>
         </div>
-        </>
+        <Substances/>
         <div className='areaBar'>
           <div className='infoBar'>
             <p>calm</p>

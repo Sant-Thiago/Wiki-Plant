@@ -3,10 +3,6 @@ import './LikeButton.css';
 import '../../App.css'
 
 function LikeButton() {
-    let styleButton;
-    let likesPlant;
-    let typeIcon;
-
     const [ativo, setAtivo] = useState(false);
     const [likes, setLikes] = useState(getLikesPlant());
     
