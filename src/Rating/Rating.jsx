@@ -1,10 +1,8 @@
 import './Rating.css'
-import "bootstrap-icons/font/bootstrap-icons.css"
-import $ from "jquery"
 
 function Rating() {
     let grades;
-    let listStarsHtml;
+    let listClass;
     let totalReviews;
 
     function verifAssessment(assessment) {
@@ -14,12 +12,8 @@ function Rating() {
         return assessment[2].total + (positive - negative);
     }
 
-    function getTotal(avaliacoes) {
-        let total = 0;
-        for (const obj of avaliacoes) {
-            total += obj.total;
-        }
-        return total;
+    function getTotal(assessments) {
+        return assessments.reduce((total, obj) => total + obj.total, 0);
     }
 
     function getPercent(percentBase, valueBase, value) {
@@ -34,15 +28,15 @@ function Rating() {
         totalReviews = total;
         grades = (percent / 2).toFixed(1);
 
-        listStarsHtml = [];
+        listClass = [];
         for (let i = 1; i <= 5; i++) {
             
             if (i < grades || i + 0.3 < grades) {
-                listStarsHtml.push('<i class="bi-star-fill estrela"></i>');
+                listClass.push("bi-star-fill");
             } else if (i - 0.4 > grades) {
-                listStarsHtml.push('<i class="bi-star estrela"></i>');
+                listClass.push("bi-star");
             } else {
-                listStarsHtml.push('<i class="bi-star-half estrela"></i>');
+                listClass.push("bi-star-half");
             }
         }
     }
@@ -79,19 +73,25 @@ function Rating() {
     // 4° bom
     // 5° perfeito
 
-
-    $(function() {
-        $("#stars").html(listStarsHtml);
-        $("#grades").html(grades);
-        $("#reviews").html(totalReviews == 1 ? `(${totalReviews} review)`: `(${totalReviews} reviews)`);
-    })
+    
     return (
         <div className='ratings'>
             <div className='starsGrades'>
-                <p id='stars' className='containerStars'></p>
-                <p id='grades' className='grades'></p>
+                <p id='stars' className='containerStars'>
+                    {
+                        listClass.map((classe, index) => {
+                            return <i key={index} className={classe}></i>
+                        })
+                    }
+                </p>
+                <p id='grades' className='grades'>{grades}</p>
             </div>
-            <a href="./" id='reviews' className='reviews'></a>
+            <a href="./" id='reviews' className='reviews'>({totalReviews}
+                {
+                    totalReviews == 1 ? ` review`: ` reviews`
+                }
+            )
+            </a>
         </div>
     )
 }

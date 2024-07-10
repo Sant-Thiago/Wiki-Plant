@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client'
 import Header from './Header/Header'
 import './App.css'
 import Rating from './Rating/Rating'
+import LikeButton from './Buttons/LikeButton/LikeButton'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <Header/> */}
-      <nav className='navPlants'>Plantas  Wiki  OG Tresure</nav>
+    <nav className='navPlants'>Plantas  Wiki  OG Tresure</nav>
     <section>
       <div className='divImg'>
         <img src="" alt="" />
@@ -23,15 +24,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 Híbrido
               </p>
             </div>
-            <div>
-              <Rating/>
-            </div>
+            <Rating />
           </div>
-          <div className='iconDiv'>
-            icon
-          </div>
+          <LikeButton/>
         </div>
-        <h2>Porcentagens THC/CBD</h2>
+        </>
         <div className='areaBar'>
           <div className='infoBar'>
             <p>calm</p>
@@ -56,6 +53,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <p>relatos</p>
       </div>
     </section>
+    <div className='divisor'></div>
     <section className='sec2'>
       <div className='infosPlant'>
         <div className='reviews'>
@@ -64,11 +62,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </div>
         <p className='infos'>
           SEQUENCIA ::
-            beneficios,
-            caracteristicas,
-            surgimento/historia,
-            ambiente/condições para plantar,
-            info floração/colheita,
+          beneficios,
+          caracteristicas,
+          surgimento/historia,
+          ambiente/condições para plantar,
+          info floração/colheita,
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ea fuga alias sit numquam est non sapiente praesentium corrupti rerum cupiditate iusto suscipit soluta, inventore eum culpa fugit in dolorum?
         </p>
       </div>
@@ -80,6 +78,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <section>
       dicas
     </section>
+    <div className='divisor'></div>
     <section>
       ctts
     </section>

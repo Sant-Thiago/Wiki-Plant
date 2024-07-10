@@ -1,0 +1,27 @@
+
+.containerBttn {
+    display: flex;
+    align-items: center;
+
+    padding: 7px;
+
+    border-radius: 20px;
+
+    background-color: #FBFAF8;
+
+    border: 2px solid var(--greenTertiary);
+
+    cursor: pointer;
+
+}
+
+.heart {
+    margin-bottom: -2px;
+    font-size: 18px;
+    color: var(--greenTertiary);
+}
+
+.likes {
+    font-size: 16px;
+    margin: 0px 7px;
+}
