@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import './Substances';
+import './Substances.css';
+import '../../App.css'
 
 function Substances() {
     let thc;
@@ -7,14 +7,14 @@ function Substances() {
 
     function getSubstances() {
         thc = 23.4;
-        cbd = 7.2;
+        cbd = 3.2;
     }
 
     getSubstances();
     return (
-        <div>
-            <h2>THC {thc}</h2>
-            <h2>CBD {cbd}</h2>
+        <div className='containerSubstance'>
+            <h2>THC <span className='percent'>{thc}</span></h2>
+            <h2>CBD <span className='percent'>{cbd}</span></h2>
         </div>
     )
 }

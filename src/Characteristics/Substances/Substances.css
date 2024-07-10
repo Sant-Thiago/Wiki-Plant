@@ -1,0 +1,20 @@
+.containerSubstance {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;
+ 
+    width: 200px;
+}
+
+h2 {
+    font-size: 18px;
+    
+    padding: 2px;
+
+    background-color: var(--greenSecondary);    
+}
+
+.percent {
+    font-size: 15px;
+}

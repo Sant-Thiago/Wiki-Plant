@@ -5,6 +5,7 @@ import './App.css'
 import Rating from './Rating/Rating'
 import LikeButton from './Buttons/LikeButton/LikeButton'
 import Substances from './Characteristics/Substances/Substances'
+import Bar from './Bar/Bar'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,31 +15,26 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div className='divImg'>
         <img src="" alt="" />
         <p>font</p>
+        <LikeButton/>
       </div>
+      <div className='vertical'></div>
       <div className='divInfoMain'>
         <div className='infosRap'>
           <div className='namesReview'>
             <div className='nameType'>
-              <div>
-                <h1>OG Treasure</h1>
-                <span>Treasure</span>
-              </div>
               <p className='typePlant'>
-                Híbrido
+                Hybrid
               </p>
+              <div className='namePopName'>
+                <h1>OG Treasure</h1>
+                <span>AKA Treasure</span>
+              </div>
             </div>
             <Rating/>
           </div>
-          <LikeButton/>
         </div>
         <Substances/>
-        <div className='areaBar'>
-          <div className='infoBar'>
-            <p>calm</p>
-            <p>energy</p>
-          </div>
-          <span>barra</span>
-        </div>
+        <Bar/>
         <div>
           <div className='prinEffc'>
             <p>effects</p>
@@ -56,7 +52,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <p>relatos</p>
       </div>
     </section>
-    <div className='divisor'></div>
+    <div className='horizontal'></div>
     <section className='sec2'>
       <div className='infosPlant'>
         <div className='reviews'>
@@ -81,7 +77,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <section>
       dicas
     </section>
-    <div className='divisor'></div>
+    <div className='horizontal'></div>
     <section>
       ctts
     </section>

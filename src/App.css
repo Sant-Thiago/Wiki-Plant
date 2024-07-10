@@ -29,8 +29,8 @@ body {
     font-family: var(--defaultFont); 
 }
 
-main .divisor {
-    height: 2px;
+.horizontal  {
+    height: 1px;
     width: 100%;
     
     margin: 100px 0;
@@ -82,17 +82,11 @@ section {
     padding: 5px 0;
 }
 
-.nameType {
-    display: flex;
-    justify-content: space-between;
-
-    width: 240px;
-}
-
 .typePlant {
-    padding: 3px 5px;
+    padding: 2px 6px;
 
     height: fit-content;
+    width: fit-content;
     
     font-size: 14px;
     font-weight: 600;
@@ -100,6 +94,20 @@ section {
     border-radius: 12px;
     
     background-color: var(--greenTertiary);
+}
+
+.namePopName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.namePopName h1 {
+    padding-right: 10px;
+}
+
+.namePopName h1 {
+    padding-right: 10px;
 }
 
 .likeBttn {
