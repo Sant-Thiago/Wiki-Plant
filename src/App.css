@@ -117,20 +117,16 @@ section {
     border: 2px solid #809671;
 }
 
-.areaBar {
-    width: 100%;
-}
-
-.infoBar {
+.containerTypes {
     display: flex;
     justify-content: space-between;
-}
+    
+    margin: 2px auto;
 
-.areaBar span {
-    display: block;
-    text-align: center;
-    background-color: red;
-    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    
+    width: 97%;
 }
 
 .prinEffc {

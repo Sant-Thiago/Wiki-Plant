@@ -34,8 +34,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </div>
         </div>
         <Substances/>
-        <Bar/>
+        <div className='containerBar'>
+          <div className='containerTypes'>
+            <p>calm</p>
+            <p>energy</p>
+          </div>
+          <Bar/>
+        </div>
         <div>
+          <Blocks/>
           <div className='prinEffc'>
             <p>effects</p>
             <p>effect1</p>
