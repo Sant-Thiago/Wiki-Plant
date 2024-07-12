@@ -1,5 +1,4 @@
 import './Bar.css';
-import '../App.css'
 import { useEffect, useState } from 'react';
 import $ from 'jquery';
 

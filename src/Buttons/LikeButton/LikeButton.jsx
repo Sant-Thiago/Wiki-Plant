@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './LikeButton.css';
-import '../../App.css'
 
 function LikeButton() {
     const [ativo, setAtivo] = useState(false);

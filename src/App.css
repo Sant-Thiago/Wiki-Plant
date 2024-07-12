@@ -60,9 +60,6 @@ section {
 .sectionUM {
     background-color: var(--whitePrimary);
 }
-.sec2 {
-    background-color: var(--creamPrimary);
-}
 
 .divImg {
     width: 37%;
@@ -162,19 +159,38 @@ section {
 }
 
 .infosPlant {
-    border: 2px solid red;
-    width: 60%;
-    height: 250px;
+    width: 65%;
+    height: 100%;
 }
 
-.reviews {
-    font-size: 10px;
+.infoTabs {
     display: flex;
+
+    width: fit-content;
+    
+    font-size: 10px;    
 }
 
-.reviews h2 {
-    border: 2px solid black;
-    margin: 0 2px;
+.infoTabs > div {
+    background-color: var(--creamSecondary);
+}
+
+.tab {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 3px 7px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+}
+
+.selected {
+    background-color: var(--creamSecondary);
+}
+
+.infos {
+    background-color: var(--creamSecondary);
+    padding: 5px;
+    height: 85%;
 }
 
 .infoCarac {

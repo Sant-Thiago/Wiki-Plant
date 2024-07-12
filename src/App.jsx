@@ -62,11 +62,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </div>
     </section>
     <div className='horizontal'></div>
-    <section className='sec2'>
+    <section>
       <div className='infosPlant'>
-        <div className='reviews'>
-          <h2>Plant Infos</h2>
-          <h2>Reviews</h2>
+        <div className='infoTabs'>
+          <div className=''>
+            <h2 className='tab selected'>Plant Infos</h2>
+          </div>
+          <div className='deselected'>
+            <h2 className='tab'>Reviews</h2>
+          </div>
         </div>
         <p className='infos'>
           SEQUENCIA ::

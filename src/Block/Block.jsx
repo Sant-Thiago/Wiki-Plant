@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './Block.css';
-import '../App.css'
 
 function Block() {
 

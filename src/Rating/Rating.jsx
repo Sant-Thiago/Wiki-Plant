@@ -93,9 +93,9 @@ function Rating() {
                 </p>
                 <p id='grades' className='grades'>{grades}</p>
             </div>
-            <a href="./" id='reviews' className='reviews'>({totalReviews}
+            <a href="./" id='infoTabs' className='infoTabs'>({totalReviews}
                 {
-                    totalReviews == 1 ? ` review`: ` reviews`
+                    totalReviews == 1 ? ` review`: ` infoTabs`
                 }
             )
             </a>

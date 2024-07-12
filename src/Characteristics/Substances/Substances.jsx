@@ -1,5 +1,4 @@
 import './Substances.css';
-import '../../App.css'
 
 function Substances() {
     let thc;
