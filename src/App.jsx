@@ -3,19 +3,25 @@ import ReactDOM from 'react-dom/client'
 import Header from './Header/Header'
 import './App.css'
 import Rating from './Rating/Rating'
-import LikeButton from './Buttons/LikeButton/LikeButton'
+import BarSocialMedia from './BarSocialMedia/BarSocialMedia'
 import Substances from './Characteristics/Substances/Substances'
 import Bar from './Bar/Bar'
+import Block from './Block/Block'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <Header/> */}
-    <nav className='navPlants'>Plantas  Wiki  OG Tresure</nav>
     <section>
       <div className='divImg'>
-        <img src="" alt="" />
-        <p>font</p>
-        <LikeButton/>
+        <nav className='navPlants'>Plantas &gt; Wiki &gt; OG Tresure</nav>
+        <img 
+          src="https://terramagna.com.br/wp-content/uploads/2022/09/Planta-jovem-luz-solar.jpg" 
+          alt="terraMagma" 
+          className='imagemPlant'
+        />
+        <div className='containerSocialMedia'>
+          <BarSocialMedia/>
+        </div>
       </div>
       <div className='vertical'></div>
       <div className='divInfoMain'>
@@ -41,19 +47,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </div>
           <Bar/>
         </div>
-        <div>
-          <Blocks/>
-          <div className='prinEffc'>
-            <p>effects</p>
-            <p>effect1</p>
-            <p>effect2</p>
-            <p>effect3</p>
+        <div className='containerBlocks'>
+          <div>
+            effects: 
+            <Block/>
           </div>
-          <div className='prinFlv'>
-            <p>flavors</p>
-            <p>flavor1</p>
-            <p>flavor2</p>
-            <p>flavor3</p>
+
+          <div>
+            flavors: 
+            <Block/>
           </div>
         </div>
         <p>relatos</p>

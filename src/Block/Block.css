@@ -1,0 +1,32 @@
+.containerBlock {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 80%;
+    margin: auto;
+}
+
+.block {
+    width: 90px;
+    height: 90px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    border: 1px solid ;
+    box-shadow: 0px 0px 4px var(--greenPrimary);
+}
+
+
+/*  
+--whitePrimary: #FBFAF8;
+--creamPrimary: #e4cfb9;
+--creamSecondary: #E5D2B8;
+--greenPrimary: #809671;
+--greenSecondary: #99DDC8;
+--greenTertiary: #95BF74;
+
+--marrom: #725C3A;
+--bege: #D2AB80; 
+*/

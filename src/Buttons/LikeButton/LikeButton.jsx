@@ -27,7 +27,7 @@ function LikeButton() {
     return (
         <button 
             id='bttn' 
-            className='containerBttn' 
+            className='containerLikeButton' 
             onClick={() => favorite()}
         >    
             <i className={ativo ? 'bi-heart-fill heart' : 'bi-heart heart'}></i>

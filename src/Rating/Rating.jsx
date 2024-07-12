@@ -65,8 +65,15 @@ function Rating() {
     // // 4: 0, = 0
     // // 5: 3, = 15  
 
-    // total 46 = 32
+    // total 46 = 100
+    // resu,tado = 32
     
+    // 1 = 7
+    // 2 = 5
+    // 3 = 3
+    // 4 = 0
+    // 5 = 6
+
         // 1° ruim
     // 2° medio
     // 3° legal

@@ -1,0 +1,13 @@
+.containerShareButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 33px;
+    height: 33px;
+
+    border: 1px solid;
+    border-radius: 37%;
+
+    cursor: pointer;
+}
