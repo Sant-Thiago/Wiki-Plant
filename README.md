@@ -8,3 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh ::talita persi:: 
 
 refs = [weedmaps.com/strains/og-kush, https://www.cannaconnection.com/strains/mango, www.leafly.com/strains/wedding-cake]
+
+referencia da parte da superior com informações pegar da pagina https://www.leafly.com/strains/wedding-cake no entanto adicionar os textos descritivos do weedmaps.com/strains/og-kush
+aumentar o tamanho da tela utilizada
+procurar cores mais calmas - desejavel tons pasteis
