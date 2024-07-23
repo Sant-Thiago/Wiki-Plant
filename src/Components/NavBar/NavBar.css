@@ -1,0 +1,38 @@
+.containerNavBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 240px;
+    height: 100vh;
+}
+
+.cotainerNav {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+
+    position: sticky;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cotainerNav nav {
+}
+
+.cotainerNav nav h2 {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.divisor {
+    position: fixed;
+
+    left: 110px;
+    width: 2px;
+    height: 90vh;
+    background-color: black;
+}
+
+// ref https://dribbble.com/shots/20454786-E-Book-Dashboard

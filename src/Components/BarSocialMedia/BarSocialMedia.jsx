@@ -12,3 +12,7 @@ function BarSocialMedia() {
 }
 
 export default BarSocialMedia;
+
+// Lavar pode tirar a brisa mas ficar mais forte a cor, ficar mais brisa e perder o gosto ou ficar com gosto e muita brisa
+// bengala e croche
+// baile das quadrinhas

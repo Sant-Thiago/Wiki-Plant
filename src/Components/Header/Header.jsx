@@ -5,7 +5,7 @@ function Header() {
     const  [valor, setValor] = useState("");
     return (
         <div className='bodyHeader'>
-            <img src="/" alt="Logo" className="ImgClass"/>
+            {/* <img src="/" alt="Logo" className="ImgClass"/> */}
             <div className="inputSearch">
                 <i className="material-symbols-outlined">
                     search
