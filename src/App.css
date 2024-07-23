@@ -8,7 +8,7 @@
 }
 
 :root {
-    --whitePrimary: #FBFAF8;
+    --whitePrimary: #F1F2F0;
     --creamPrimary: #e4cfb9;
     --creamSecondary: #E5D2B8;
     --greenPrimary: #809671;
@@ -23,10 +23,14 @@
 
 body {
     width: 100%;
-
+    
     background-color: var(--whitePrimary);
     
     font-family: var(--defaultFont); 
+}
+
+.cotainerApp {
+    display: flex;
 }
 
 .horizontal  {
@@ -51,22 +55,38 @@ section {
     justify-content: space-between;
     align-items: center;
 
-    width: 75%;
+    width: 85%;
     height: 83vh;
     
-    margin: 50px auto;
+    margin: auto;
+
+    /* border: 1px solid; */
 }
 
-.sectionUM {
-    background-color: var(--whitePrimary);
+.firstContainer {
+    height: 38vh;
+}
+
+.btn_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .divImg {
-    width: 37%;
-    height: 100%;
     display: flex;
-    flex-flow: column;
-    justify-content: space-around;
+
+    position: relative;
+    top: 20%;
+    
+    width: 37%;
 }
 
 .imagemPlant {
@@ -74,20 +94,36 @@ section {
     height: 86%;
 }
 
+.infosRap {
+    display: flex;
+    
+    width: 50%;
+    height: 70%;
+}
+
+.namesReview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nameType {
+    display: flex;
+    width: 50%;
+}
+
 .containerSocialMedia {
     display: flex;
     justify-content: end;
 }
 
-.divInfoMain {
-    width: 60%;
+.infoSection{
+    background-color: var(--greenTertiary);
+    padding: 0 100px;
 }
 
-.infosRap {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 5px 0;
+.containerSection {
+    width: 500px;
 }
 
 .typePlant {
@@ -107,7 +143,6 @@ section {
 .namePopName {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .namePopName h1 {

@@ -12,8 +12,8 @@ function Substances() {
     getSubstances();
     return (
         <div className='containerSubstance'>
-            <h2>THC <span className='percent'>{thc}</span></h2>
-            <h2>CBD <span className='percent'>{cbd}</span></h2>
+            <h2>{thc}% <span className='percent'>THC</span></h2>
+            <h2>{cbd}% <span className='percent'>CBD</span></h2>
         </div>
     )
 }
